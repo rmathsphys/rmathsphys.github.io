@@ -1,0 +1,310 @@
+/* ==== EXTERNAL FONTS ==== */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-LightItalic.ttf") format("truetype");
+  font-weight: light;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* ==== GLOBAL STYLES ==== */
+html {
+  font-family: 'Roboto', sans-serif;
+  color: #222528;
+  line-height: 1.5;
+  font-size: 12pt;
+}
+
+body {
+  background-color: #f2f3f4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-style: normal;
+}
+
+a {
+  color: #0064a7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0d1321;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+/* ==== NAVIGATION BAR ==== */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #0d1321;
+  color: #f2f3f4;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  font-size: 14pt;
+}
+
+.navbar-brand {
+  order: 1;
+  text-decoration: none;
+  height: 25px;
+  margin: 12.5px 0;
+  color: #f2f3f4;
+  font-weight: 500;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+  color: #f2f3f4;
+}
+
+.navbar-collapse {
+  order: 999;
+  z-index: 999;
+  flex: 100%;
+  height: 0vh;
+  overflow: hidden;
+  background-color: #0d1321;
+  transition: all 399ms ease;
+  font-size: 11pt;
+}
+
+.uncollapse {
+  height: 50vh;
+  margin-top: 20px;
+}
+
+.navbar-nav {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  color: #f2f3f4;
+}
+
+.nav-item {
+  display: block;
+  list-style: none;
+  padding: 0.3em 0;
+}
+
+.navbar-nav .nav-item a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.3em 0;
+  color: #f2f3f4;
+}
+
+.toggle-collapse {
+  display: block;
+  order: 2;
+  width: 45px;
+  height: 35px;
+  background-color: transparent;
+  color: #f2f3f4;
+  border: 1px solid #f2f3f4;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 0 2px 0;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+  margin-left: auto;
+}
+
+.toggle-collapse:hover {
+  color: #0064a7;
+  border-color: #0064a7;
+}
+
+.nav-toggle-icon {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 660px) {
+  nav {
+    flex-wrap: nowrap;
+  }
+  .navbar-collapse {
+    flex: 1;
+    height: 25px;
+    margin: 12.5px 0;
+    text-align: right;
+    background-color: transparent;
+    transition: all 399ms ease;
+  }
+
+  .nav-item {
+    display: inline;
+    padding-left: 1.2em;
+  }
+
+  .toggle-collapse {
+    display: none;
+  }
+}
+
+/* ==== OTHER STUFF ==== */
+main {
+  padding-top: 80px;
+}
+
+.intro-box {
+  margin-top: 2.5em;
+}
+
+.intro-heading {
+  display: block;
+  margin-top: 1.5em;
+  margin-bottom: 0.2em;
+  font-size: 24pt;
+  font-weight: 500;
+}
+
+.intro-subheading {
+  display: block;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  font-size: 10pt;
+  font-weight: 400;
+  /*font-style: italic;*/
+}
+
+.intro-icon-line {
+  display: block;
+  margin-top: 0.7em;
+  margin-bottom: 0.4em;
+  font-size: 15pt;
+}
+
+.intro-icon-line i {
+  margin-right: 10px;
+}
+
+.intro-pic {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 660px) {
+  .intro-box {
+    margin-top: 3em;
+  }
+
+  .intro-heading {
+    margin-top: 0.1em;
+  }
+
+  .intro-pic {
+    display: inline-block;
+    float: right;
+    width: 200px;
+    margin: 0 0.5em 0.5em 1.5em;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .intro-pic {
+    width: 225px;
+  }
+}
+
+.gen-heading {
+  display: block;
+  margin-top: 0.7em;
+  margin-bottom: 0.2em;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 10pt;
+  text-align: center;
+}
