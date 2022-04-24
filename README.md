@@ -1,2 +1,2 @@
 # rmathsphys.github.io
-Personal website
+Personal website: [rmathsphys.github.io](https://rmathsphys.github.io)
